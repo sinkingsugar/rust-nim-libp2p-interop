@@ -1,0 +1,18 @@
+[package]
+name = "noise_interop_test"
+version = "0.1.0"
+authors = ["Giovanni Petrantoni <giovanni@status.im>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+env_logger = "0.7.1"
+futures = "0.3.1"
+async-std = "1.5.0"
+libp2p = { path = "d:/tmp/rust-libp2p" }
+libp2p-core = { path = "d:/tmp/rust-libp2p/core" }
+libp2p-noise = { path = "d:/tmp/rust-libp2p/protocols/noise" }
+libp2p-tcp = { path = "d:/tmp/rust-libp2p/transports/tcp" }
+multiaddr = { package = "parity-multiaddr", path = "d:/tmp/rust-libp2p/misc/multiaddr" }
